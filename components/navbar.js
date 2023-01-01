@@ -10,8 +10,8 @@ function NavLink({to, children}) {
 
 function MobileNav({open, setOpen}) {
     return (
-        <div className={`absolute top-0 left-0 h-screen w-screen  transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
-            <div className="flex space-x-4  items-center justify-center filter drop-shadow-md  h-20"> {/*logo container*/}
+        <div className={`absolute top-0 md:top-4  left-0 sm:pl-[690px] h-screen w-screen  transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
+            <div className="flex space-x-4 border bg-white text-black rounded-3xl items-center justify-center filter drop-shadow-md md:w-[700px] h-20"> {/*logo container*/}
                 <a className="text-xl font-semibold" href="/">LOGO</a>
                  <a className="text-xl font-medium my-4" href="/about" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
                     About
@@ -44,15 +44,15 @@ export default function Navbar() {
 </div>
                 <a className="text-2xl font-semibold" href="/">LOGO</a>
             </div>
-            <div className="w-9/12 flex justify-end items-center">
+            <div className="w-9/12 flex  justify-end items-center">
 
-                <div className="z-50 flex border rounded-lg border-green-300 bg-green-300 relative w-14 h-12 flex-col justify-between items-center " onClick={() => {
+                <div className="z-50 flex border rounded-lg sm:top-4 border-green-300 bg-green-300 relative w-14 h-12 sm:h-20 sm:w-20 flex-col justify-between items-center " onClick={() => {
                     setOpen(!open)
                 }}>
                     {/* hamburger button */}
-                    <span className={`h-2 w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-4" : ""}`} />
-                    <span className={`h-2 w-full bg-black rounded-lg transition-all duration-300 ease-in-out ${open ? "w-0" : "w-full"}`} />
-                    <span className={`h-2 w-full  bg-black rounded-lg transform transition duration-300 ease-in-out ${open ? "-rotate-45  -translate-y-4" : ""}`} />
+                    <span className={`h-2 sm:h-3 w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-4 md:translate-y-9" : ""}`} />
+                    <span className={`h-2 sm:h-3 w-full bg-black rounded-lg transition-all duration-300 ease-in-out ${open ? "w-0" : "w-full"}`} />
+                    <span className={`h-2 sm:h-3 w-full  bg-black rounded-lg transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-4 md:-translate-y-8" : ""}`} />
                 </div>
 
                
