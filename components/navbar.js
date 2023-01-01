@@ -12,9 +12,15 @@ function MobileNav({open, setOpen}) {
     return (
         <div className={`absolute top-0 md:top-4  left-0 sm:pl-[690px] h-screen w-screen  transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
             <div className="flex space-x-4 border bg-white text-black rounded-3xl items-center justify-center filter drop-shadow-md md:w-[700px] h-20"> {/*logo container*/}
-                <a className="text-xl font-semibold" href="/">LOGO</a>
+                <a className="text-xl font-medium my-4" href="/">Home</a>
                  <a className="text-xl font-medium my-4" href="/about" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
-                    About
+                    Games
+                </a>
+                <a className="text-xl font-medium my-4" href="/about" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
+                   Company
+                </a>     
+                      <a className="text-xl font-medium my-4" href="/about" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
+                    Careers
                 </a>
                 <a className="text-xl font-normal my-4" href="/contact" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
                     Contact
@@ -42,11 +48,11 @@ export default function Navbar() {
   </a>
 </NavLink>
 </div>
-                <a className="text-2xl font-semibold" href="/">LOGO</a>
+                <a className="text-2xl font-semibold" href="/">GAMEZ</a>
             </div>
             <div className="w-9/12 flex  justify-end items-center">
 
-                <div className="z-50 flex border rounded-lg sm:top-4 border-green-300 bg-green-300 relative w-14 h-12 sm:h-20 sm:w-20 flex-col justify-between items-center " onClick={() => {
+                <div className="z-50 flex border rounded-lg sm:top-4 border-blue-200 bg-[#BCEFE9] relative w-14 h-12 sm:h-20 sm:w-20 flex-col justify-between items-center " onClick={() => {
                     setOpen(!open)
                 }}>
                     {/* hamburger button */}
