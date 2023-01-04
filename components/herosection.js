@@ -2,7 +2,7 @@ import React from 'react'
 
 const herosection = () => {
   return (
-    <div className="rounded-xl sm:pl-[1000px] sm:mr-24 text-[#8b95a6] p-8 ">
+    <div className="rounded-xl hover:scroll-auto sm:pl-[1000px] sm:mr-24 text-[#8b95a6] p-8 hero">
   <div className="pt-12 align-right  space-y-2">
      <h1 className="text-[#BCEFE9] text-8xl" >Join the Game</h1>
     <blockquote>

@@ -14,14 +14,18 @@
 
 
 body {
-  background: url(../images/background1.jpg);
+  background-image: url('../images/background1.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #0B1321;
+  background-size: contain;
+  width: 100%;
   color: #fff;
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
+  --tw-gradient-from: inherit;
+--tw-gradient-to: rgb(#0B1321);
+--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-

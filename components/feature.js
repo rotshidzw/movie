@@ -11,13 +11,13 @@ function NavLink({to, children}) {
 
 const feature = () => {
   return (
-    <div className="rounded-xl   sm:pl-[960px] sm:mr-24 text-[#8b95a6] p-8 ">
+    <div className="rounded-xl hover:scroll-auto  sm:pl-[960px] sm:mr-24 text-[#8b95a6] p-8 ">
   <div className="pt-3 bg-[#0B1321] rounded-2xl align-right  space-y-2">
     <div className="pl-3  pb-4 pr-3">
     <div className="rounded-xl" viewBox="10 50 0 0"><NavLink href="/"> 
   <a >
-  <video    className="rounded-xl"  role="presentation" 
-   autoplay="" src="https://video.wixstatic.com/video/ea26fd_8ed7dc63397c45969e1d658cb28c5a7b/480p/mp4/file.mp4" ></video>
+  <video    className="rounded-xl" preload="auto" role="presentation" 
+   autoPlay="auto" src="https://video.wixstatic.com/video/ea26fd_8ed7dc63397c45969e1d658cb28c5a7b/480p/mp4/file.mp4" ></video>
     
   </a>
 </NavLink>
