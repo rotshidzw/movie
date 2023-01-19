@@ -10,8 +10,10 @@ function NavLink({to, children}) {
 }
 
 const feature = () => {
-  return (
-    <div className="rounded-xl hover:scroll-auto  sm:pl-[960px] sm:mr-24 text-[#8b95a6] p-8 ">
+  return (<div className="rounded-xl hover:scroll-auto lg:pt-36 sm:ml-[200px] md:ml-[500px] md:mr-[20px] lg:mr-[20px] xl:mr-[20px] lg:ml-[600px] xl:ml-[800px]  sm:pl-[100px]  text-[#8b95a6] p-8 ">
+    <h3 className="text-blue-300 text-4xl mb-6">Featured</h3>
+  
+    <div>
   <div className="pt-3 bg-[#0B1321] rounded-2xl align-right  space-y-2">
     <div className="pl-3  pb-4 pr-3">
     <div className="rounded-xl" viewBox="10 50 0 0"><NavLink href="/"> 
@@ -35,7 +37,7 @@ const feature = () => {
          Play Now
         </button>
      </div>
-   
+   </div>
   </div>
 </div>
 

@@ -18,7 +18,25 @@ body {
   background-repeat: no-repeat;
   background-color: #0B1321;
   background-size: contain;
+  background-attachment:fixed;
   width: 100%;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  --tw-gradient-from: inherit;
+--tw-gradient-to: rgb(#0B1321);
+--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+body.bgfill {
+  background-image: url('https://static.wixstatic.com/media/84770f_0656c318634b498b8add6715889e2922~mv2.jpg/v1/fill/w_1237,h_1208,fp_0.62_0.56,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_0656c318634b498b8add6715889e2922~mv2.jpg');
+  background-repeat: no-repeat;
+  background-color: #0B1321;
+  background-size: fill;
   color: #fff;
   font-family: 'Inter', sans-serif;
   font-size: 1rem;

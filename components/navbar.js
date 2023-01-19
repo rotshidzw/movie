@@ -10,7 +10,7 @@ function NavLink({to, children}) {
 
 function MobileNav({open, setOpen}) {
     return (
-        <div className={`absolute top-0 md:top-4  left-0 sm:pl-[690px] h-screen   transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
+        <div className={`absolute top-0 md:top-4  left-0 md:pl-[690px] h-screen   transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
             <div className="flex space-x-4 border bg-white text-black rounded-3xl items-center justify-center filter drop-shadow-md md:w-[700px] h-20"> {/*logo container*/}
                 <a className="text-xl font-medium my-4" href="/">Home</a>
                  <a className="text-xl font-medium my-4" href="/about" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
